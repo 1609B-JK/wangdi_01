@@ -1,0 +1,7 @@
+rootProject.name = 'ssm-parent-wd'
+include 'ssm-common-wd'
+include 'ssm-dao-wd'
+include 'ssm-service-wd'
+include 'ssm-entity-wd'
+include 'ssm-controller-wd'
+

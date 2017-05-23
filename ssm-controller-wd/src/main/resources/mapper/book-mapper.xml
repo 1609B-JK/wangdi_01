@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >  
+<mapper namespace="com.jk.dao">
+
+
+
+    <!-- parameterType === parameterClass
+        resultType === resultClass
+        #{} === ##
+        ${} === $$
+     -->
+    <!--<select id="selectBookCount" parameterType="book" resultType="int">
+       select count(t.t_bookid) from t_books t
+
+
+
+    </select>
+
+    <select id="selectBookList" parameterType="book" resultType="book">
+        select t2.* from (select t1.* ,rownum r from
+        (select t.t_bookid as "bookId",
+        t.t_bookname as "bookName"
+        from t_books t)t1 where rownum <![CDATA[<=]]>#{endPos})t2 where r >=#{startPos}
+
+    </select>
+
+
+   <insert id="insertBook" parameterType="book">
+        INSERT INTO t_books
+        (t_bookId,t_bookName)
+        VALUES
+        (t_books_seq.nextval, #{bookName})
+
+   </insert>
+
+    <delete id="deleteBook" parameterType="book" >
+        delete from t_books  where t_bookId = #{bookId}
+
+    </delete>
+
+    <select id="selectBookById"  parameterType="book" resultType="book">
+        select t_bookId as "bookId", t_bookName as "bookName"  from t_books  where t_bookId = #{bookId}
+    </select>
+
+    <update id="updateBook" parameterType="book">
+    update t_books set  t_bookName=#{bookName} where t_bookId=#{bookId}
+    </update>-->
+</mapper>   
